@@ -1,11 +1,18 @@
-#include "interrupt.h"
+/************************************************************
+*Description : Rain gauge interrupt handling
+************************************************************/
 
-void calculate_rainfall(void)
+#include "interrupts.h"
+
+/* External rain pulse counter variable*/
+extern volatile uint32_t rain_pulse_count;
+
+void rain_gauage_ISR(void)
 {
-  /***********************************************
+  /***********************************************************
     *Each rain guage tip generates one pulse
-    *Interrupt ensure pulses are not missed
-  ************************************************/
+    *Interrupt-based counting prevents missing rainfall events
+  ************************************************************/
 
 rain_pulse_count++;
 }
