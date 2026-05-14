@@ -15,6 +15,6 @@ void lora_init(void);
 /***********************************************************
 * Description : Sends sensor data packet using LoRa
 ************************************************************/
-void lora_send(char * data);
+void lora_send(char *data);
 
 #endif
