@@ -19,7 +19,7 @@ float rainfall = 0;
 char tx_packet[100];
 
 /* =========================FUNCTION PROTOTYPES ===================================*/
-void system_init(void)
+void system_init(void);
 
 /* =========================INITIALIZATION ===================================*/
 void system_init(void)
@@ -30,7 +30,7 @@ void system_init(void)
   //Initialize GPIOs
   gpio_init();
 
-  //Configure rain gauge inteerupt pin
+  //Configure rain gauge interrupt pin
   rain_gauge_interrupt_init();
   
  //Initialize sensor module 
