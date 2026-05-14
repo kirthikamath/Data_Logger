@@ -1,11 +1,11 @@
 /**********************************************************
-* Description : Header file for SD Card handling functions
+* Description : Header file for SD card handling functions
 ***********************************************************/
 
 #ifndef SD_CARD_H
 #define SD_CARD_H
 
-/*====================== FUNCTION PROTOTYPES =============*/
+/*================== FUNCTION PROTOTYPES =============*/
 
 /**********************************************************
 * Description : Initialize SD card and filesystem
