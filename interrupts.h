@@ -15,6 +15,11 @@ extern volatile uint32_t rain_pulse_count;
 /*========================== FUNCTION PROTOTYPES ====================*/
 
 /************************************************************************
+* Description : Initializes rain gauge interrupt configuration
+**************************************************************************/
+void rain_gauge_interrupt_init();
+
+/************************************************************************
 * Description : Interrupt Service Routine for rain gauge pulse detection
 **************************************************************************/
 
