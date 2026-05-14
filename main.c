@@ -42,14 +42,8 @@ void system_init(void)
  //Initialize SD_card
   sd_card_init();
 
- //Mount FAT file system
-  fatfs_mount();
-
  //Initialize LoRa module
   lora_init();
-
- //Initialize RTC/timer 
- rtc_init();
 
  //Initialize low-power mode
   power_management_init();
@@ -59,36 +53,37 @@ void system_init(void)
 
 int main(void)
 {
-    //perform all peripheral initialization
+    // Perform all peripheral initialization
     system_init();
+  
     while(1)
     {
         // Wake up periodically using RTC/timer
         wakeup_from_sleep();
 
-        //Read temperature and humidity sensor using I2C
+        // Read temperature and humidity sensor using I2C
         read_temp_humidity_sensor(&temp,&humidity);
 
-        //Calculating the rainfall from pulse count
+        // Calculating the rainfall from pulse count
         rainfall = calculate_rainfall(rain_pulse_count);
 
-        //create data packet
+        // Create data packet
         sprintf(tx_packet,
                 "TEMP=%.2f,HUM=%.2f,RAIN=%.2f",
                  temp,
                  humidity,
                  rainfall);
 
-        //store data in SD card
+        // Store data in SD card
         sd_write_log(tx_packet);
 
-        //transmit data using LoRa
+        // Transmit data using LoRa
         lora_send(tx_packet);
 
-        //clear/update required variables
+        // Clear/update required variables
         rain_pulse_count = 0;
 
-        //enter low-power sleep mode
+        // Enter low-power sleep mode
         enter_sleep_mode();
     }
   return 0;
