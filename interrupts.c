@@ -4,10 +4,7 @@
 
 #include "interrupts.h"
 
-/* External rain pulse counter variable*/
-extern volatile uint32_t rain_pulse_count;
-
-void rain_gauage_ISR(void)
+void rain_gauge_ISR(void)
 {
   /***********************************************************
     *Each rain guage tip generates one pulse
