@@ -5,7 +5,7 @@
 #include "sensor.h"
 
 /***********************************************************************
-  * Description :Initializes temperature and humidity sensor
+  * Description : Initializes temperature and humidity sensor
 ************************************************************************/
 void sensor_init(void)
 {
@@ -39,5 +39,5 @@ float calculate_rainfall (uint32_t pulse_count)
     * Example: 1 pulse = 0.25mm rainfall
   ********************************************************/
 
-  return (pulse_count *0.25);
+  return (pulse_count * 0.25f);
 }
