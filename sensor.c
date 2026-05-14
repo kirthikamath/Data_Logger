@@ -1,4 +1,4 @@
-#include "sensors.h"
+#include "sensor.h"
 
 void read_temp_humidity_sensor(float *temp, float *hum)
 {
