@@ -25,6 +25,7 @@ The firmware is designed using a modular embedded software architecture with sep
 
 -------
 # System Architecture
+```text
 Rain Gauge ------> GPIO Interrupt
 Temperature/Humidity Sensor --------> I2C
                                         ↓
@@ -38,6 +39,7 @@ Temperature/Humidity Sensor --------> I2C
 
 -------
 # Project Structure
+```text
 Remote_Data_Logger/
 |- README.md
 |- main.c
