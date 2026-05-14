@@ -1,5 +1,5 @@
 /***************************************************************
-* Description : Power management implementations
+* Description : Power management implementation
 ****************************************************************/
 
 #include "power_management.h"
@@ -24,7 +24,7 @@ void enter_sleep_mode(void)
 {
   // Disable unused peripherals
 
-  // Enter MCU low_power mode
+  // Enter MCU low-power mode
 }
 
 /***************************************************************
