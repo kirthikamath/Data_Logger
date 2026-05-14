@@ -4,6 +4,17 @@
 
 #include "interrupts.h"
 
+/************************************************************************
+* Description : Initializes rain gauge interrupt configuration
+**************************************************************************/
+
+void rain_gauge_interrupt_init(void)
+{
+  // Configure GPIO interrupt for rain gauge input
+
+  // configure interrupt trigger
+}
+
 /************************************************************
 *Description : Handles rain gauge pulse interrupt 
 ************************************************************/
