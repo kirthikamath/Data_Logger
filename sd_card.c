@@ -1,5 +1,5 @@
 /**********************************************************
-* Description : SD Card handling implementation
+* Description : SD card handling implementation
 ***********************************************************/
 
 #include "sd_card.h"
@@ -11,7 +11,7 @@ void sd_card_init(void)
 {
   // Initialize SPI communication
 
-  // Detect Sd Card
+  // Detect SD Card
 
   // Mount FAT filesystem
 }
@@ -19,7 +19,7 @@ void sd_card_init(void)
 /**********************************************************
 * Description : Stores sensor log data into SD card
 ***********************************************************/
-void sd_write_log(char *data)
+void sd_write_log(char * data)
 {
   // Open log file
 
