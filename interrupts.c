@@ -15,9 +15,10 @@ void rain_gauge_interrupt_init(void)
   // configure interrupt trigger
 }
 
-/************************************************************
+/*************************************************************************
 *Description : Handles rain gauge pulse interrupt 
-************************************************************/
+* This ISR is automatically triggered when rain gauge interrupt occurs
+***************************************************************************/
 
 void rain_gauge_ISR(void)
 {
