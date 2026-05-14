@@ -24,7 +24,8 @@ void system_init(void);
 /* =========================INITIALIZATION ===================================*/
 void system_init(void)
 {
-  //Initialize MCU clock
+  /* Hardware initialization functions */
+  // Initialize MCU clock
   clock_init();
 
   //Initialize GPIOs
@@ -36,10 +37,10 @@ void system_init(void)
  //Initialize sensor module 
    sensor_init();
 
- //Initialize SPI for SD card and LoRA
+ // Initialize SPI for SD card and LoRa
   spi_init();
 
- //Initialize SD_card
+ // Initialize SD card
   sd_card_init();
 
  //Initialize LoRa module
