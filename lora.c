@@ -1,16 +1,27 @@
+/***********************************************************
+* Description : LoRa communication implementation
+************************************************************/
+
 #include "lora.h"
 
+/***********************************************************
+* Description : Initialzes LoRa communication module
+************************************************************/
 
 void lora_init(void)
 {
-  // Initializw LoRa module
+  // Initialize LoRa module
 
   // Configure communication parameters
 
   // Verify module readiness
 }
 
-void lora_send(char * data)
+/***********************************************************
+* Description : Sends sensor data paclet using LoRa
+************************************************************/
+
+void lora_send(char *data)
 {
   // Send packet to LoRa module using SPI
 
