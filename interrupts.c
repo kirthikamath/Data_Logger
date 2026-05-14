@@ -4,6 +4,10 @@
 
 #include "interrupts.h"
 
+/************************************************************
+*Description : Handles rain gauge pulse interrupt 
+************************************************************/
+
 void rain_gauge_ISR(void)
 {
   /***********************************************************
@@ -11,5 +15,5 @@ void rain_gauge_ISR(void)
     *Interrupt-based counting prevents missing rainfall events
   ************************************************************/
 
-rain_pulse_count++;
+  rain_pulse_count++;
 }
