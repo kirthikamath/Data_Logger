@@ -2,18 +2,18 @@
 
 # Project Overview
 
-This problem demonstrates a system-level embedded firmware architecture for a remote weather data logger.
+This project demonstrates a system-level embedded firmware architecture for a remote weather data logger.
 
-Here the system periodically collects environmental data such as temperature, humidity and rainfall, stores the data locally in the Sd card, and transmits the information wirelessly using LoRa communication to the base station.
+Here the system periodically collects environmental data such as temperature, humidity and rainfall, stores the data locally in the SD card, and transmits the information wirelessly using LoRa communication to the base station.
 
 The firmware is designed using a modular embedded software architecture with seperate modules for:
 - Sensor handling
 - Interrupt handling
 - SD card logging
-- Lora communication
+- LoRa communication
 - Power management
 
------
+---
 # Features
 - Interrupt-based rain gauge pulse detection
 - Temperature and humidity sensor interfacing
@@ -23,7 +23,7 @@ The firmware is designed using a modular embedded software architecture with sep
 - Modular firmware structure
 - System-level embedded firmware architecture
 
--------
+---
 # System Architecture
 ```text
 Rain Gauge ------> GPIO Interrupt
@@ -37,7 +37,7 @@ Temperature/Humidity Sensor --------> I2C
                                         ↓
                                         Base Station
 
--------
+---
 # Project Structure
 ```text
 Remote_Data_Logger/
@@ -54,7 +54,7 @@ Remote_Data_Logger/
 |- power_management.c
 |- power_management.h
 
----------
+---
 # Technologies and Concepts Used
 - Embedded C
 - Modular firmware architecture
