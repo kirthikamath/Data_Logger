@@ -5,7 +5,7 @@
 #include "lora.h"
 
 /***********************************************************
-* Description : Initialzes LoRa communication module
+* Description : Initializes LoRa communication module
 ************************************************************/
 
 void lora_init(void)
@@ -18,7 +18,7 @@ void lora_init(void)
 }
 
 /***********************************************************
-* Description : Sends sensor data paclet using LoRa
+* Description : Sends sensor data packet using LoRa
 ************************************************************/
 
 void lora_send(char *data)
