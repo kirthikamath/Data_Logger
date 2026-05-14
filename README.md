@@ -37,7 +37,7 @@ Temperature/Humidity Sensor --------> I2C
                                         ↓
                                         Base Station
 
----
+```
 # Project Structure
 ```text
 Remote_Data_Logger/
@@ -54,7 +54,7 @@ Remote_Data_Logger/
 |- power_management.c
 |- power_management.h
 
----
+```
 # Technologies and Concepts Used
 - Embedded C
 - Modular firmware architecture
