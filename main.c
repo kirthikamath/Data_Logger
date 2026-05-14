@@ -33,8 +33,8 @@ void system_init(void)
   //Configure rain gauge inteerupt pin
   rain_gauge_interrupt_init();
   
- //Initialize I2C for temp/humidity sensor
-  i2c_init();
+ //Initialize sensor module 
+   sensor_init();
 
  //Initialize SPI for SD card and LoRA
   spi_init();
